@@ -11,7 +11,7 @@ class AppBloc extends ChangeNotifier{
 
   updateTime() {
     seconds++;
-    percent = (seconds * 100) /100;
+    percent = (seconds * 100) / time;
     notifyListeners();
     if (seconds == time) done();
   }
